@@ -15,6 +15,6 @@
     "noEmit": true,
     "jsx": "react"
   },
-  "include": ["./src", "./types", "./jest-setup.ts"],
+  "include": ["./src", "./types", "./jest-setup.ts", "./stories"],
   "exclude": ["node_modules"]
 }
