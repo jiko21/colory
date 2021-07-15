@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
-import Component from '../src/Component';
+import Component from '@/Component';
 
 describe('Component.tsx', () => {
   it('correctly render', () => {

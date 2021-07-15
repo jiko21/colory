@@ -13,8 +13,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+    }
   },
-  "include": ["./src", "./types", "./jest-setup.ts", "./stories"],
+  "include": ["./src", "./types", "./jest-setup.ts", "./stories", "./tests"],
   "exclude": ["node_modules"]
 }
