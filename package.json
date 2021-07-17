@@ -19,6 +19,7 @@
     "new:component": "hygen new component"
   },
   "dependencies": {
+    "@adobe/react-spectrum": "^3.12.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
