@@ -26,6 +26,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-controls": "^6.3.4",
     "@storybook/addon-essentials": "^6.3.4",
     "@storybook/addon-links": "^6.3.4",
     "@storybook/react": "^6.3.4",
@@ -43,6 +44,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "hygen": "^6.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.6",
