@@ -1,5 +1,5 @@
 ---
-to: src/<%= path %>/<%= component_name %>.tsx
+to: src/components/<%= path %>/<%= component_name %>.tsx
 ---
 import React from 'react';
 
