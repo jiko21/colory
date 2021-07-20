@@ -5,18 +5,19 @@ module.exports = {
   testURL: 'http://localhost/',
   roots: ['<rootDir>/src', '<rootDir>/tests/'],
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
-  transformIgnorePatterns: ['/node_modules/'],
+  // transformIgnorePatterns: ['/node_modules/'],
   setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   moduleNameMapper: {
-    '@/(.*)': "<rootDir>/src/$1",
+    '@/(.*)': '<rootDir>/src/$1',
+    '\\.css$': 'identity-obj-proxy',
   },
-  "globals": {
-    "ts-jest": {
-      "tsConfig": "tsconfig.json"
-    }
+  globals: {
+    'ts-jest': {
+      tsConfig: 'tsconfig.json',
+    },
   },
   transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest'
-  }
+    '^.+\\.(ts|tsx)$': 'ts-jest',
+  },
 };
