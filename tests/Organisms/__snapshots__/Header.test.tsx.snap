@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Organisms/Header.tsx correctly render 1`] = `
+<div>
+  <header>
+    <div
+      class="_flex-container_ffbb7"
+    >
+      <div
+        class="_flex_ffbb7 _flex-gap_ffbb7"
+        style="flex-direction: row; align-items: center; justify-content: center; --gap: var(--spectrum-global-dimension-size-400, var(--spectrum-alias-size-400));"
+      >
+        <div>
+          Sample
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
