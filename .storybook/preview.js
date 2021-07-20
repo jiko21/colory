@@ -1,3 +1,5 @@
+import { Provider, defaultTheme, Text } from '@adobe/react-spectrum';
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -7,3 +9,11 @@ export const parameters = {
     },
   },
 }
+
+export const decorators = [
+  (Story) => (
+    <Provider theme={defaultTheme}>
+      <Story />
+    </Provider>
+  ),
+];
