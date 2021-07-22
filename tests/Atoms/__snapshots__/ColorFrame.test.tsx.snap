@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Atoms/ColorFrame.tsx correctly render 1`] = `
+<div>
+  <div
+    class="_flex_ffbb7"
+    style="background-color: rgb(255, 0, 0);"
+  >
+    <div>
+      children
+    </div>
+  </div>
+</div>
+`;
