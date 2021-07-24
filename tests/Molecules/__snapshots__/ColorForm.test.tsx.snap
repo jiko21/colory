@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Molecules/ColorForm.tsx correctly render 1`] = `
+<div>
+  <div>
+    <input
+      data-testid="color-picker"
+      type="color"
+      value="#FF0000"
+    />
+  </div>
+  <div>
+    <div
+      class="_spectrum-Textfield_61339"
+    >
+      <input
+        class="_spectrum-Textfield-input_61339"
+        data-testid="color-text"
+        id="react-aria-2737256666-1"
+        type="text"
+        value="#FF0000"
+      />
+    </div>
+  </div>
+</div>
+`;
