@@ -1,19 +1,22 @@
-import { Provider, defaultTheme, Text } from '@adobe/react-spectrum';
+import { defaultTheme, Provider } from '@adobe/react-spectrum';
+import { RecoilRoot } from 'recoil';
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
     },
   },
-}
+};
 
 export const decorators = [
   (Story) => (
     <Provider theme={defaultTheme}>
-      <Story />
+      <RecoilRoot>
+        <Story />
+      </RecoilRoot>
     </Provider>
   ),
 ];
