@@ -6,7 +6,7 @@ interface Props {
   handleChange: (value: string) => void;
 }
 
-const ColorForm: React.FC<Props> = ({ color, handleChange }) => {
+const ColorForm: React.FC<Props> = React.memo(({ color, handleChange }) => {
   return (
     <>
       <View>
@@ -17,6 +17,6 @@ const ColorForm: React.FC<Props> = ({ color, handleChange }) => {
       </View>
     </>
   );
-};
+});
 
 export default ColorForm;
