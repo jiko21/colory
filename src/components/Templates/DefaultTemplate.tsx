@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
-const DefaultTemplate: React.FC = ({ children }) => {
-  return <>{children}</>;
+interface Props {
+  header: ReactElement;
+}
+
+const DefaultTemplate: React.FC<Props> = ({ children, header }) => {
+  return (
+    <>
+      {header}
+      {children}
+    </>
+  );
 };
 
 export default DefaultTemplate;
