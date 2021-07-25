@@ -19,7 +19,7 @@ describe('url.ts', () => {
     });
   });
 
-  describe('getColorsFromUrl', () => {
+  describe('setColorsToUrl', () => {
     const replaceStateMock = jest.fn();
     // @ts-ignore
     let _replaceState = null;
