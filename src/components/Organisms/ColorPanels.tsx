@@ -1,4 +1,3 @@
-import { colorState } from '@/atom/color';
 import ColorPanel from '@/components/Organisms/ColorPanel';
 import { useMobileDevice } from '@/hooks/device';
 import { generateRandomColor } from '@/util/color';
@@ -6,12 +5,10 @@ import { copyUrlToClipboard, getColorsFromUrl, setColorsToUrl } from '@/util/url
 import { ActionButton, Flex, Tooltip, TooltipTrigger, View } from '@adobe/react-spectrum';
 import Add from '@spectrum-icons/workflow/Add';
 import Link from '@spectrum-icons/workflow/Link';
-import React, { useEffect } from 'react';
-import { useRecoilValue, useSetRecoilState } from 'recoil';
+import React, { useEffect, useState } from 'react';
 
 const ColorPanels: React.FC = () => {
-  const colors = useRecoilValue(colorState);
-  const setColors = useSetRecoilState(colorState);
+  const [colors, setColors] = useState<string[]>([]);
 
   useEffect(() => {
     if (colors.length !== 0) {
