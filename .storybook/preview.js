@@ -1,5 +1,4 @@
 import { defaultTheme, Provider } from '@adobe/react-spectrum';
-import { RecoilRoot } from 'recoil';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -14,9 +13,7 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <Provider theme={defaultTheme}>
-      <RecoilRoot>
-        <Story />
-      </RecoilRoot>
+      <Story />
     </Provider>
   ),
 ];
