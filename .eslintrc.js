@@ -4,7 +4,14 @@ module.exports = {
     node: true,
     browser: true,
   },
-  extends: ['plugin:react/recommended', 'google', 'prettier', 'plugin:jest/recommended', 'eslint:recommended'],
+  extends: [
+    'plugin:react/recommended',
+    'google',
+    'prettier',
+    'plugin:jest/recommended',
+    'eslint:recommended',
+    'plugin:playwright/jest-playwright',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
