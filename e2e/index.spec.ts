@@ -1,3 +1,7 @@
+// eslint-disable-next-line spaced-comment
+/// <reference types="jest-playwright-preset" />
+// eslint-disable-next-line spaced-comment
+/// <reference types="expect-playwright" />
 describe('should display correct browser', () => {
   beforeAll(async () => {
     await page.goto('http://localhost:5000/');

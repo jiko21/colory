@@ -19,7 +19,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["./src", "./types", "./jest-setup.ts", "./stories", "./tests", "./e2e"],
-  "files": ["node_modules/jest-playwright-preset/types/global.d.ts", "node_modules/expect-playwright/global.d.ts"],
+  "include": ["./src", "./types", "./jest-setup.ts", "./stories", "./tests"],
   "exclude": ["node_modules"]
 }
