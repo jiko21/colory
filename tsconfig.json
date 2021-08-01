@@ -11,14 +11,15 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
     "jsx": "react",
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
+      "@/*": ["src/*"]
     }
   },
-  "include": ["./src", "./types", "./jest-setup.ts", "./stories", "./tests"],
+  "include": ["./src", "./types", "./jest-setup.ts", "./stories", "./tests", "./e2e"],
+  "files": ["node_modules/jest-playwright-preset/types/global.d.ts", "node_modules/expect-playwright/global.d.ts"],
   "exclude": ["node_modules"]
 }
