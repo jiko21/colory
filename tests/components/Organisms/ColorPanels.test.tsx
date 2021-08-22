@@ -2,7 +2,6 @@ import ColorPanels from '@/components/Organisms/ColorPanels';
 import * as urlUtil from '@/util/url';
 import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-import { RecoilRoot } from 'recoil';
 
 const shouldInputElementsCorrect = (count: number) => {
   const textInputs = screen.getAllByTestId('color-text');
@@ -20,9 +19,7 @@ describe('components/Organisms/ColorPanels.tsx', () => {
   const setColorsToUrlMock = jest.spyOn(urlUtil, 'setColorsToUrl');
   const copyUrlToClipboardMock = jest.spyOn(urlUtil, 'copyUrlToClipboard');
   const Target = () => (
-    <RecoilRoot>
-      <ColorPanels />
-    </RecoilRoot>
+    <ColorPanels />
   );
 
   afterEach(() => {
